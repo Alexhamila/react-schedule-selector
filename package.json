@@ -1,0 +1,150 @@
+{
+  "_from": "git+https://git@github.com/Alexhamila/react-schedule-selector.git",
+  "_id": "react-schedule-selector@3.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-schedule-selector",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://git@github.com/Alexhamila/react-schedule-selector.git",
+    "rawSpec": "git+https://git@github.com/Alexhamila/react-schedule-selector.git",
+    "saveSpec": "git+https://git@github.com/Alexhamila/react-schedule-selector.git",
+    "fetchSpec": "https://git@github.com/Alexhamila/react-schedule-selector.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://git@github.com/Alexhamila/react-schedule-selector.git#1d5ef0635196192cfe3f3d5922f029232a9190c4",
+  "_spec": "git+https://git@github.com/Alexhamila/react-schedule-selector.git",
+  "_where": "C:\\Users\\alexh\\Desktop\\mariviera",
+  "author": {
+    "name": "Bibek Ghimire"
+  },
+  "bugs": {
+    "url": "https://github.com/bibekg/react-schedule-selector/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/preset-flow": "^7.12.1",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "@types/jest": "^26.0.15",
+    "date-fns": "^2.11.1",
+    "src": "^1.1.2"
+  },
+  "deprecated": false,
+  "description": "A mobile-friendly when2meet-style grid-based schedule selector",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-transform-typescript": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/enzyme": "^3.10.7",
+    "@types/react": "^16.9.53",
+    "@types/react-test-renderer": "^16.9.3",
+    "@types/styled-components": "^5.1.4",
+    "@types/styled-system": "^5.1.10",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^26.6.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-styled-components": "^1.6.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "core-js": "^3.6.5",
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^26.6.1",
+    "jest-styled-components": "^7.0.3",
+    "jsdom": "^12.0.0",
+    "moment": "^2.22.2",
+    "node-forge": "^0.10.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.14.2",
+    "react": ">=16.3.0",
+    "react-dom": "^16.3.2",
+    "react-test-renderer": "^16.4.1",
+    "regenerator-runtime": "^0.12.1",
+    "styled-components": "^5.2.0",
+    "styled-system": "^5.1.5",
+    "surge": "^0.20.1",
+    "typescript": "^4.0.3",
+    "typescript-plugin-styled-components": "^1.4.4"
+  },
+  "engines": {
+    "node": ">8.0"
+  },
+  "files": [
+    "dist/lib",
+    "src/lib",
+    "declarations"
+  ],
+  "homepage": "https://github.com/bibekg/react-schedule-selector#readme",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "testMatch": [
+      "<rootDir>/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "verbose": false
+  },
+  "keywords": [
+    "react",
+    "styled-components",
+    "date",
+    "grid"
+  ],
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "name": "react-schedule-selector",
+  "peerDependencies": {
+    "react": ">=16.0",
+    "styled-components": ">=5.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "printWidth": 120,
+    "tabWidth": 2
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibekg/react-schedule-selector.git"
+  },
+  "scripts": {
+    "build": "npm run lib:build && npm run lib:build-types && npm run docs:build",
+    "clean": "rm -rf dist",
+    "cover": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "docs:build": "parcel build src/docs/index.html -d dist/docs",
+    "docs:deploy": "npm docs:build && surge dist/docs --domain react-schedule-selector.surge.sh",
+    "docs:dev": "parcel serve src/docs/index.html -d dev/docs",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lib:build": "babel src/lib --out-dir dist/lib --extensions \".ts,.tsx\" --source-maps inline",
+    "lib:build-types": "tsc --emitDeclarationOnly -d",
+    "lint": "eslint src/**/*.{js,jsx} --quiet",
+    "postpublish": "yarn docs:deploy",
+    "test": "TZ=UTC jest"
+  },
+  "version": "3.0.0"
+}
